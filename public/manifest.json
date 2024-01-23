@@ -1,25 +1,56 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "LEARN",
+  "name": "Class room to learn",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "/images/icons-192.svg",
+      "type": "image/svg+xml",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "/images/icons-512.svg",
+      "type": "image/svg+xml",
       "sizes": "512x512"
     }
+    
   ],
-  "start_url": ".",
+  "id": "/",
+  "start_url": "/",
+  "inject": true,
+  "fingerprints": false,
+  "background_color": "#3367D6",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "lesson1",
+      "short_name": "lesson1",
+      "description": "lesson1",
+      "url": "/color",
+      "icons": [{ "src": "/images/today.jpg", "sizes": "612x344" }]
+    },
+    {
+      "name": "lesson2",
+      "short_name": "lesson2",
+      "description": "lesson2",
+      "url": "/lesson1",
+      "icons": [{ "src": "/images/tomorrow.jpg", "sizes": "1632x853" }]
+    }
+  ],
+  "description": "classroom to learn",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.jpg",
+      "type": "image/jpg",
+      "sizes": "1904x977",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "1887x930",
+      "form_factor": "wide"
+    }
+  ]
 }
