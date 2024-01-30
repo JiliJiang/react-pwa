@@ -1,11 +1,12 @@
-
-import React, { useState} from 'react';
+import React, {useContext, useState} from 'react';
+import {userContext} from '../context'
+//import React, { useState} from 'react';
 import '../App.css';
 const axios = require('axios').default;
 //import axios from 'axios';
 
 function Form () {
-
+const {value, setValue} = useContext(userContext);
 const [imageText, setImageText] = useState ('');
 const [imageFile, setImageFile] = useState (null);
 const [images, setImages] = useState([{}]);
@@ -29,7 +30,7 @@ const addImage = (e) =>{
         
 return ( 
 
-<div>
+<div style={{color: value}}>
     <h1>Welcome to Image Page!</h1>
     <form>
 
